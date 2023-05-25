@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vize 2</string>
+    <!-- Strings related to login -->
+    <string name="btn_order_text">Order</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click_for_details">Click For Details</string>
+    <string name="product_description_text">Product Description</string>
+    <string name="product_stock_text">Stock Amount</string>
+    <string name="product_rate_text">Rate</string>
+</resources>
