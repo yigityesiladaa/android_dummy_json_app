@@ -1,6 +1,5 @@
 package com.example.vize2.ui.productDetail
 
-import android.graphics.Matrix.ScaleToFit
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,14 +8,13 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import com.bumptech.glide.Glide
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.vize2.R
 import com.example.vize2.common.extensions.showToast
 import com.example.vize2.retrofit.configs.ApiClient
 import com.example.vize2.databinding.FragmentProductDetailBinding
-import com.example.vize2.models.CartPostProduct
+import com.example.vize2.models.AddBasketProduct
 import com.example.vize2.models.Product
 import com.example.vize2.retrofit.services.ICartService
 import com.example.vize2.retrofit.services.IProductService
@@ -65,10 +63,10 @@ class ProductDetailFragment : Fragment() {
     private fun registerEvents(){
         binding.btnOrder.setOnClickListener {
             product?.let {
-                var cartPostProductList = mutableListOf<CartPostProduct>()
-                val cartPostProduct = CartPostProduct(it.id,1)
-                cartPostProductList.add(cartPostProduct)
-                productDetailViewModel.addToCart(cartPostProductList)
+                var addBasketProductList = mutableListOf<AddBasketProduct>()
+                val addBasketProduct = AddBasketProduct(it.id,1)
+                addBasketProductList.add(addBasketProduct)
+                productDetailViewModel.addToCart(addBasketProductList)
                 navController.navigate(R.id.action_productDetailFragment2_to_cartFragment)
             }
         }

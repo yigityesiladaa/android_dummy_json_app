@@ -3,9 +3,9 @@ package com.example.vize2.ui.productDetail
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.vize2.models.Cart
-import com.example.vize2.models.CartPost
-import com.example.vize2.models.CartPostProduct
+import com.example.vize2.models.Basket
+import com.example.vize2.models.AddBasket
+import com.example.vize2.models.AddBasketProduct
 import com.example.vize2.models.Product
 import com.example.vize2.retrofit.services.ICartService
 import com.example.vize2.retrofit.services.IProductService
@@ -42,10 +42,10 @@ class ProductDetailViewModel : ViewModel() {
         })
     }
 
-    fun addToCart(cartPostProducts : List<CartPostProduct>){
-        val cartPost = CartPost(1,cartPostProducts)
-        cartService?.addToCart(cartPost)?.enqueue(object : Callback<Cart>{
-            override fun onResponse(call: Call<Cart>, response: Response<Cart>) {
+    fun addToCart(addBasketProducts : List<AddBasketProduct>){
+        val addBasket = AddBasket(1,addBasketProducts)
+        cartService?.addToCart(addBasket)?.enqueue(object : Callback<Basket>{
+            override fun onResponse(call: Call<Basket>, response: Response<Basket>) {
                 if(response.isSuccessful){
                     val response = response.body()
                     Log.e("response",response.toString())
@@ -57,7 +57,7 @@ class ProductDetailViewModel : ViewModel() {
                 }
             }
 
-            override fun onFailure(call: Call<Cart>, t: Throwable) {
+            override fun onFailure(call: Call<Basket>, t: Throwable) {
                 isAddFailed.value = true
             }
 

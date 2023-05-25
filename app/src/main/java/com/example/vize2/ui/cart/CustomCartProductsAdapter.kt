@@ -7,12 +7,12 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.example.vize2.R
-import com.example.vize2.models.CartProduct
+import com.example.vize2.models.BasketResultProduct
 
 class CustomCartProductsAdapter(private val context : Context)
-    : ArrayAdapter<CartProduct>(context, R.layout.cart_product_list_item) {
+    : ArrayAdapter<BasketResultProduct>(context, R.layout.cart_product_list_item) {
 
-    private var cartProductList = listOf<CartProduct>()
+    private var basketResultProductList = listOf<BasketResultProduct>()
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val rootView = LayoutInflater.from(context).inflate(R.layout.cart_product_list_item,null,true)
@@ -21,7 +21,7 @@ class CustomCartProductsAdapter(private val context : Context)
         val productPrice = rootView.findViewById<TextView>(R.id.txtCartProductPrice)
         val productQuantity = rootView.findViewById<TextView>(R.id.txtCartProductQuantity)
 
-        val cartProduct = cartProductList[position]
+        val cartProduct = basketResultProductList[position]
 
         productTitle.text = cartProduct.title
         productPrice.text = "$${cartProduct.price}"
@@ -31,11 +31,11 @@ class CustomCartProductsAdapter(private val context : Context)
     }
 
     override fun getCount(): Int {
-        return cartProductList.count()
+        return basketResultProductList.count()
     }
 
-     fun submitList(list : List<CartProduct>){
-        cartProductList = list
+     fun submitList(list : List<BasketResultProduct>){
+        basketResultProductList = list
         notifyDataSetChanged()
     }
 

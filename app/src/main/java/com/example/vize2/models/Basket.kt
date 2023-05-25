@@ -1,16 +1,16 @@
 package com.example.vize2.models
 
-data class Cart (
+data class Basket (
     val id: Int,
-    val products: List<CartProduct>,
+    val products: List<BasketResultProduct>,
     val total: Long,
     val discountedTotal: Long,
-    val userID: Long,
+    val userId: Long,
     val totalProducts: Long,
     val totalQuantity: Long
 )
 
-data class CartProduct (
+data class BasketResultProduct (
     val id: Int,
     val title: String,
     val price: Long,
