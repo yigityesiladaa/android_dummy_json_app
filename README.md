@@ -1,5 +1,6 @@
 # DummyJson App
-This application is an application developed and still being developed as an exercise example using the API offered by the "dummyjson.com" site.
+
+This application is an application developed as an assignment within the scope of Turkcell Kotlin Bootcamp, using the API offered by the "dummyjson.com" site.
 
 ## Tools Used in the Application
 
