@@ -14,8 +14,8 @@ Name  | Version
 Kotlin | 1.8.0
 Retrofit2  | 2.9.0
 Glide  | 4.15.1
-</p>
-## App Display Images
+
+### App Display Images
 
 Home Screen  | Product Detail Screen | Cart Screen
 ------------- | ------------- | -------------
