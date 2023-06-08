@@ -17,6 +17,10 @@ Glide  | 4.15.1
 </p>
 ## App Display Images
 
-<a ><img src="https://github.com/yyigityesiladaa/DummyJson/blob/main/app_images/home.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="600" />&nbsp;&nbsp;&nbsp;&nbsp;</a>
-<a><img src="https://github.com/yyigityesiladaa/DummyJson/blob/main/app_images/product_detail.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="600"/>&nbsp;&nbsp;&nbsp;&nbsp;</a>
-<a><img src="https://github.com/yyigityesiladaa/DummyJson/blob/main/app_images/cart.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="600"/>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+Home Screen  | Product Detail Screen | Cart Screen
+------------- | ------------- | -------------
+<a ><img src="https://github.com/yyigityesiladaa/DummyJson/blob/main/app_images/home.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="600" /></a> | <a><img src="https://github.com/yyigityesiladaa/DummyJson/blob/main/app_images/product_detail.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="600"/></a> | <a><img src="https://github.com/yyigityesiladaa/DummyJson/blob/main/app_images/cart.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="600"/></a>
+
+
+
+
