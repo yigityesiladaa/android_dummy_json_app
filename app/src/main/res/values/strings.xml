@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Vize 2</string>
+    <string name="app_name">Dummy Json App</string>
     <!-- Strings related to login -->
     <string name="btn_order_text">Order</string>
     <!-- TODO: Remove or change this placeholder text -->
